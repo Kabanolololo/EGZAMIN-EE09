@@ -1,0 +1,89 @@
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Usługi Kosmetyczne
+        </title>
+        <link rel="stylesheet" href="styl.css"/>
+    </head>
+    <body>
+<script>
+    function licz(){
+        var a = document.getElementById('p');
+        var b = document.getElementById('m');
+        var c = document.getElementById('mt');
+        var d = document.getElementById('rb');
+        
+        if (a.checked){
+            a=45;
+        }
+        else{
+            a=0;
+        }
+        if (b.checked){
+            b=30;
+        }
+        else{
+            b=0;
+        }
+        if (c.checked){
+            c=20;
+        }
+        else{
+            c=0;
+        }
+        if (d.checked){
+            d=5;
+        }
+        else{
+            d=0;
+        }
+        var wynik = a+b+c+d;
+        document.getElementById("wynik").innerHTML="Twoje zamówienie wynosi: "+wynik;
+    }
+
+</script>
+        <div id="lewy1">
+            <h2>
+                W ofercie
+            </h2>
+            <ul>
+                <li type="square"><a href="twarz.html">Zabiegi na twarz</a></li>
+                    <ol>
+                        <li>Piling</li>
+                        <li>Maska</li>
+                        <li>Regulacja Brwi</li>
+                    </ol>
+                <li type="square">Masaż</li>
+                <li type="square">Diety oczyszczające</li>
+            </ul>
+            <a href="index.html">Do strony głównej</a>
+        </div>
+        <div id="prawy1">
+            <h1>
+                Salon Kosmetyczny
+            </h1>
+        </div>
+
+        <div id="prawy2">
+            <h2>
+                Sprawdź cenę swojej wizyty
+            </h2>
+            <form>
+                <input type="checkbox" id="p" value="45"> Piling<br>
+                <input type="checkbox" id="m" value="30">Maska<br>
+                <input type="checkbox" id="mt"  value="20" >Masaż twarzy<br>
+                <input type="checkbox" id="rb"  value="5">Regulacja brwi<br>
+                <input type="button" onclick="licz()" value="Sprawdź cenę"> 
+            </form>
+            <div id="wynik"></div>
+        </div>
+        <div id="lewy2">
+            <img src="obraz1.jpg" alt="Kosmetyczka"/>
+        </div>
+        <div id="stopka">
+            <p>
+                Autor: Paweł Muszyński
+            </p>
+    </body>
+</html>

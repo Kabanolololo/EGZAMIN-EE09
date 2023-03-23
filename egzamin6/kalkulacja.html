@@ -1,0 +1,65 @@
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Nasza stacja paliw
+        </title>
+        <link rel="stylesheet" href="styl4.css"/>
+    </head>
+    <body>
+<script>
+    function oblicz(){
+        var a = Number(document.getElementById("dystans").value);
+        var b = Number(document.getElementById("spalanie").value);
+        var wynik =Number((a*b)/100);
+        document.getElementById("wynik").innerHTML="Potrzebujesz "+wynik+" litrów paliwa";
+    }
+</script>
+        <header>
+            <div id="baner">
+                <h2>
+                    Witamy na stacji paliw!
+                </h2>
+            </div>
+        </header>
+        <div id="lewy">
+            <a href="index.html">
+                <img src="home.png">
+            </a>
+            <br>
+            <a href="kalkulacja.html">
+                <img src="znak.png">
+            </a>
+        </div>
+        <div id="prawy">
+            <img src="samochod.png" alt="grafika:samochód">
+        </div>
+        <div style="clear: both;"></div>
+        <main id="glowny">
+            <h2>
+                Oblicz, ile litrów musisz zatankować
+            </h2>
+            <form>
+                Dystans do przejechania w km:<br>
+                <input type="number" min="1" id="dystans"><br>
+                Spalanie samochodu w 1/100km:<br>
+                <input type="number" min="1" id="spalanie"><br>
+                <input type="button" value="OBLICZ" onclick="oblicz()">
+            </form>
+            <div id="wynik"></div>
+        </main>
+        <footer>
+            <div id="stopkalewa">
+                <p>
+                    Strone opracował: Paweł Muszyński
+                </p>
+            </div>
+            <div id="stopkaprawa">
+                <a href="https://www.youtube.com/watch?v=B05aJXbHTQE&t=5199s" target="_blank">
+                    Tu pobierzesz zapytania
+                </a>
+            </div>
+            <div style="clear: both;"></div>
+        </footer>
+    </body>
+</html>

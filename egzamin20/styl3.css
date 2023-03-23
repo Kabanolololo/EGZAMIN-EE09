@@ -1,0 +1,35 @@
+body{
+    font-family: arial;
+}
+#banerl,#baners,#banerp,#stopkal,#stopkas,#stopkap{
+    float: left;
+    background-color: saddlebrown;
+    color: white;
+    height: 100px;
+}
+#banerl,#stopkal{
+    width: 55%;
+    font-size: 120%;
+}
+#baners,#stopkas{
+    width: 25%;
+}
+#banerp,#stopkap{
+    width: 20%;
+    text-align: right;
+}
+#glowny{
+    clear: both;
+    background-color: snow;
+    padding: 70px;
+}
+a{
+    border: 2px dotted saddlebrown;
+    background-color: snow;
+    color: saddlebrown;
+    padding: 20px;
+    line-height: 100px;
+}
+ol{
+    list-style-type:lower-alpha;
+}

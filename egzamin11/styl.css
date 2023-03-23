@@ -1,0 +1,61 @@
+body{
+    background-color: #2f4f4f;
+    font-family: arial;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+}
+#baner{
+    height: 14%;
+    font-weight: bold;
+    padding-top: 1%;
+    border-bottom: 8px #FFE4E1 ridge;
+}
+#lewy,#prawy{
+    float: left;
+    height: 85%;
+    width: 30%;
+    padding-top: 2%;
+}
+#srodek{
+    text-align: center;
+    float: left;
+    width: 40%;
+    height: 85%;
+    padding-top: 2%;
+}
+td{
+    text-align: center;
+    height: 40px;
+}
+input{
+    height: 30px;
+    margin: 5px;
+}
+.figura{
+    background-color: #FFE4E1;
+    color: #800000;
+    height: 80px;
+    width: 200px;
+    border: 8px #800000 ridge;
+    border-radius: 15px;
+}
+.figura:hover{
+    cursor: pointer;
+}
+input[type=button]{
+    color: #800000;
+    height: 50px;
+    width: 100px;
+    border: 8px #800000 ridge;
+    border-radius: 15px;
+}
+label{
+    color: #800000;
+    font-weight: bold;
+}
+#wynik{
+    height: 50px;
+    padding:auto;
+}
+

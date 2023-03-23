@@ -1,0 +1,44 @@
+#baner{
+    color:white;
+    text-align: center;
+    height: 320px;
+}
+#glowny{
+    color: white;
+}
+#lewy{
+    float: left;
+    background-color: whitesmoke;
+    width: 30%;
+    text-align: center;
+    height: 150px;
+}
+#prawy{
+    float: right;
+    background-color: whitesmoke;
+    width: 70%;
+    height: 150px;
+
+}
+body{
+    background-color: seagreen;
+    font-family: verdana;
+}
+h3{
+    text-align: center;
+    letter-spacing: 6px;
+    font-variant: small-caps;
+}
+#wyniki{
+    float: left;
+    color: white;
+    text-align: center;
+    width: 170px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+#wyniki:hover{
+    background-color: white;
+    color: black;
+}

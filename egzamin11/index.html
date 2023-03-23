@@ -1,0 +1,97 @@
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Bryły obrotowe
+        </title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+        <script>
+
+                function stozek(){
+                    document.getElementById("nazwa").innerHTML="STOŻEK";
+                    document.getElementById("wzor").innerHTML="V<sub>s</sub>=1/3*&#960;*R<sup>2</sup>*H";
+                    document.getElementById("prawy").innerHTML="<img src='stozek.png' alt='stozek'/>";
+                    document.getElementById("height").innerHTML="<label for='wysokosc'>Podaj wysokość:<br></label><input type='text' id='wysokosc'><br>";
+                    document.getElementById("przycisk").innerHTML="<input type='button' value='Oblicz' id='przycisk' onclick='oblicz1()'>";                   
+                }
+                function oblicz1(){
+                    var a=Number(document.getElementById("promien").value);
+                    var b=Number(document.getElementById("wysokosc").value);
+                    var wynik=1/3*a*a*b*3.14;
+                    document.getElementById("wynik").innerHTML="Objętość stożka wynosi: "+wynik;
+                }
+                function walec(){
+                    document.getElementById("nazwa").innerHTML="WALEC";
+                    document.getElementById("wzor").innerHTML=" V<sub>w</sub>=&#960;*R<sup>2</sup>*H";
+                    document.getElementById("prawy").innerHTML="<img src='walec.png' alt='walec'/>";
+                    document.getElementById("height").innerHTML="<label for='wysokosc'>Podaj wysokość:<br></label><input type='text' id='wysokosc'><br>";
+                    document.getElementById("przycisk").innerHTML="<input type='button' value='Oblicz' id='przycisk' onclick='oblicz2()'>";  
+                }
+                function oblicz2(){
+                    var a=Number(document.getElementById("promien").value);
+                    var b=Number(document.getElementById("wysokosc").value);
+                    var wynik=3.14*a*a*b;
+                    document.getElementById("wynik").innerHTML="Objętość walca wynosi: "+wynik;
+                }
+                function kula(){
+                    document.getElementById("nazwa").innerHTML="KULA";
+                    document.getElementById("wzor").innerHTML=" V<sub>k</sub>=4/3*&#960;*R<sup>3</sup>";
+                    document.getElementById("prawy").innerHTML="<img src='kula.png' alt='kula'/>";
+                    document.getElementById("height").innerHTML="";
+                    document.getElementById("przycisk").innerHTML="<input type='button' value='Oblicz' id='przycisk' onclick='oblicz3()'>";  
+                }
+                function oblicz3(){
+                    var a=Number(document.getElementById("promien").value);
+                    var b=1;
+                    var wynik=4/3*a*a*a*3.14;
+                    document.getElementById("wynik").innerHTML="Objętość kuli wynosi: "+wynik;
+                }
+
+        </script>
+        <div id="baner">
+            <h2>
+                Bryły obrotowe
+            </h2>
+            Bryła obrotowa - bryła geometryczna ograniczona powierzchnią powstałą z obrotu figury płaskiej dookoła prostej (osi obrotu);
+        </div>
+        <div id="lewy">
+            Wybierz figurę<br>
+            <input type="button" class="figura" value="STOŻEK" onclick="stozek()"><br>
+            <input type="button" class="figura" value="WALEC" onclick="walec()"><br>
+            <input type="button" class="figura" value="KULA" onclick="kula()"><br>
+        </div>
+        <div id="srodek">
+            <h2 id="nazwa">
+                STOŻEK
+            </h2>
+            <h2 id="wzor">
+                V<sub>s</sub>=1/3*&#960;*R<sup>2</sup>*H
+            </h2>
+            <table align="center">
+                <tr>
+                    <td>
+                        <label for="promien">Podaj długość promienia:<br></label>
+                        <input type="text" id="promien">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="height">
+                        <label for="wysokosc">Podaj wysokość:<br></label>
+                        <input type="text" id="wysokosc"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="przycisk"><input type='button' value='Oblicz' id='przycisk' onclick='oblicz1()'></div>
+                    </td>
+                </tr>
+            </table>
+            <div id="wynik"></div>
+        </div>
+        <div id="prawy">
+            <img src="stozek.png" alt="stozek"/>
+        </div>
+    </body>
+</html>
